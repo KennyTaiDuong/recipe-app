@@ -1,0 +1,211 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Chicken Noodle Soup",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/chicken-noodle-soup-index-644c2bec1ce0c.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*",
+      "ingredients": [
+        {
+          "name": "vegetable oil",
+          "measurement": "2 tbsp."
+        },
+        {
+          "name": "kosher salt",
+          "measurement": "4 tsp."
+        },
+        {
+          "name": "mix of chicken thighs and breasts",
+          "measurement": "2 lb."
+        },
+        {
+          "name": "low-sodium chicken stock",
+          "measurement": "8 cups"
+        },
+        {
+          "name": "cold water",
+          "measurement": "4 cups"
+        },
+        {
+          "name": "fresh thyme",
+          "measurement": "2 sprigs"
+        },
+        {
+          "name": "bay leaf",
+          "measurement": "1"
+        },
+        {
+          "name": "yellow onion",
+          "measurement": "1 1/4 cup"
+        },
+        {
+          "name": "celery",
+          "measurement": "1 1/4 cup"
+        },
+        {
+          "name": "carrot",
+          "measurement": "1 cup"
+        },
+        {
+          "name": "wide egg noodles",
+          "measurement": "6 oz"
+        },
+        {
+          "name": "ground black pepper",
+          "measurement": "1 tsp."
+        },
+        {
+          "name": "fresh parsley",
+          "measurement": "1/4 cup"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Peppermint Meringue",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/peppermint-meringues1-1663882344.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "ingredients": [
+        {
+          "name": "egg whites",
+          "measurement": "4"
+        },
+        {
+          "name": "cream of tartar",
+          "measurement": "1/4 tsp."
+        },
+        {
+          "name": "kosher salt",
+          "measurement": "1/4 tsp."
+        },
+        {
+          "name": "granulated sugar",
+          "measurement": "1 cup"
+        },
+        {
+          "name": "peppermint extract",
+          "measurement": "1/2 tsp."
+        },
+        {
+          "name": "red gel food color",
+          "measurement": "2 drops"
+        },
+        {
+          "name": "semi-sweet chocolat chips",
+          "measurement": "1 cup"
+        },
+        {
+          "name": "peppermint canes",
+          "measurement": "5 small"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mac and Cheese",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/mac-and-cheese-index-64d25bdf03b98.jpg?crop=0.501xw:1.00xh;0.352xw,0&resize=1200:*",
+      "ingredients": [
+        {
+          "name": "elbow macoroni",
+          "measurement": "1 lb."
+        },
+        {
+          "name": "milk",
+          "measurement": "3 cups"
+        },
+        {
+          "name": "smoked gouda",
+          "measurement": "1/2 lb."
+        },
+        {
+          "name": "gruyere",
+          "measurement": "1/2 lb."
+        },
+        {
+          "name": "sodium citrate",
+          "measurement": "4 tsp."
+        },
+        {
+          "name": "butter",
+          "measurement": "1/2 stick"
+        },
+        {
+          "name": "mustard powder",
+          "measurement": "1 tsp."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Orange Sherbert",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/orangesherbert-lead-64dbe79f7724e.jpg?resize=1200:*",
+      "ingredients": [
+        {
+          "name": "fresh orange juice",
+          "measurement": "1 1/3 cups"
+        },
+        {
+          "name": "orange juice concentrate",
+          "measurement": "1 cup"
+        },
+        {
+          "name": "evaporated milk",
+          "measurement": "3/4 cups"
+        },
+        {
+          "name": "condensed milk",
+          "measurement": "2 tbsp."
+        },
+        {
+          "name": "kosher salt",
+          "measurement": "1/2 tsp."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Stuffed Mushrooms",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/stuffed-mushrooms-lead-65202691734ba.jpg?crop=1xw:0.9993865030674847xh;center,top&resize=980:*",
+      "ingredients": [
+        {
+          "name": "baby mushrooms",
+          "measurement": "1 1/2 lb."
+        },
+        {
+          "name": "butter",
+          "measurement": "2 tbsp."
+        },
+        {
+          "name": "minced garlic",
+          "measurement": "2 cloves"
+        },
+        {
+          "name": "breadcrumbs",
+          "measurement": "1/4 cup"
+        },
+        {
+          "name": "kosher salt",
+          "measurement": "1/4 tsp."
+        },
+        {
+          "name": "ground black pepper",
+          "measurement": "1/4 tsp."
+        },
+        {
+          "name": "grated parmasan",
+          "measurement": "1/4 cup"
+        },
+        {
+          "name": "cream cheese",
+          "measurement": "4 oz."
+        },
+        {
+          "name": "chopped parsley",
+          "measurement": "2 tbsp."
+        },
+        {
+          "name": "chopped thyme",
+          "measurement": "1 tbsp."
+        }
+      ]
+    }
+  ]
+}
