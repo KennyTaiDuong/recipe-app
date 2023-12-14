@@ -20,14 +20,20 @@ function App() {
       font-family: 'Montserrat', sans-serif;
       scroll-behavior: smooth;
     }
+    
     button,
     a {
       font-family: 'Montserrat', sans-serif;
       cursor: pointer;
     }
+
     img{
       user-select: none;
     }
+
+    ::-webkit-scrollbar {
+    display: none;
+  }
   `;
 
   const router = createBrowserRouter(
