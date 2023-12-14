@@ -1,16 +1,25 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.div`
+const LinkContainer = styled(NavLink)`
   border: 1px solid rgb(175, 175, 175);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  row-gap: 1rem;
   padding: 1rem;
+  text-decoration: 0;
+  color: black;
 `
 
 const TextContainer = styled.div`
-  grid-column: 2;
-  padding: 1rem;
+  grid-column: 1 / -1;
+  padding: 0;
+
+  @media screen and (min-width: 520px) {
+    grid-column: 2;
+    padding: 0 1rem;
+  }
 `
 
 const RecipeName = styled.p`
@@ -20,6 +29,11 @@ const RecipeName = styled.p`
 
 const RecipeImage = styled.img`
   width: 100%;
+  grid-column: 1 / -1;
+
+  @media screen and (min-width: 520px) {
+    grid-column: 1;
+  }
 `
 
 const IngredientList = styled.ul`
@@ -36,10 +50,11 @@ interface CardProps {
     name: string,
     measurement: string
   }[],
-  image: string
+  image: string,
+  id: number
 }
 
-export const RecipeCard = ({ name, ingredients, image}: CardProps) => {
+export const RecipeCard = ({ id, name, ingredients, image}: CardProps) => {
   const IngredientElements = ingredients?.map((item, index) => {
     return (
       <IngredientItem key={index}>
@@ -49,7 +64,7 @@ export const RecipeCard = ({ name, ingredients, image}: CardProps) => {
   })
 
   return (
-    <Container>
+    <LinkContainer to={`/recipes/${id}`} >
       <RecipeImage src={image} />
       <TextContainer>
         <RecipeName>{name}</RecipeName>
@@ -57,6 +72,6 @@ export const RecipeCard = ({ name, ingredients, image}: CardProps) => {
           {IngredientElements}
         </IngredientList>
       </TextContainer>
-    </Container>
+    </LinkContainer>
   )
 }

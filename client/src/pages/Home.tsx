@@ -34,7 +34,7 @@ export const Home = () => {
     const { id, image, ingredients, name } = recipe
 
     return (
-      <RecipeCard key={id} image={image} ingredients={ingredients} name={name} />
+      <RecipeCard key={id} id={id} image={image} ingredients={ingredients} name={name} />
     )
   })
 
