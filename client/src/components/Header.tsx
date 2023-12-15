@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
@@ -66,7 +66,11 @@ const StyledButton = styled.button`
   font-size: 1rem;
 `
 
-export const Header = () => {
+interface HeaderProps {
+  setIsFormOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const Header = ({ setIsFormOpen }: HeaderProps) => {
   const [inputValue, setInputValue] = useState("")
   const navigate = useNavigate()
 
@@ -93,7 +97,7 @@ export const Header = () => {
       </StyledForm>
       <NavbarContainer>
         <StyledNavLink to={"/"}>Browse</StyledNavLink>
-        <StyledButton>Post Recipe</StyledButton>
+        <StyledButton onClick={() => setIsFormOpen(true)}>Post Recipe</StyledButton>
       </NavbarContainer>
     </HeaderContainer>
   )
