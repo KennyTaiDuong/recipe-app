@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { RecipeCard } from "../components/RecipeCard";
 
@@ -15,7 +15,7 @@ const Heading = styled.h2`
 
 `
 
-interface RecipeProps {
+export interface RecipeProps {
   recipes: {
     id: number,
     image: string,
@@ -30,12 +30,24 @@ interface RecipeProps {
 export const Home = () => {
   const { recipes }:RecipeProps = useOutletContext()
 
-  const RecipeCards = recipes.map((recipe) => {
+  const [searchParams] = useSearchParams()
+
+  const query: any = searchParams.get("query")
+
+  const RecipeCards = recipes?.map((recipe) => {
     const { id, image, ingredients, name } = recipe
 
-    return (
-      <RecipeCard key={id} id={id} image={image} ingredients={ingredients} name={name} />
-    )
+    if (!query) {
+      return (
+        <RecipeCard key={id} id={id} image={image} ingredients={ingredients} name={name} />
+      )
+    }
+
+    if (name.toLowerCase().includes(query)) {
+      return (
+        <RecipeCard key={id} id={id} image={image} ingredients={ingredients} name={name} />
+      )
+    }
   })
 
   return (
